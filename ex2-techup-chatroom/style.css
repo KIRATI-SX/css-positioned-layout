@@ -1,1 +1,118 @@
-/* Start coding here */
+:root {
+  --gray-900: #717171;
+  --gray-200: #d9d9d9;
+  --bubble-gray: #8d8d8d;
+  --bubble-green: #0ac016;
+  --text-dark: #1f1f1f;
+  font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #fff;
+  font-family: 'Sarabun', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+}
+
+.chat-app {
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--gray-900);
+  color: #fff;
+}
+
+.chat-header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.chat-window {
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.message {
+  display: flex;
+}
+
+.message.right {
+  justify-content: flex-end;
+  
+}
+
+.message.left {
+  justify-content: flex-start;
+}
+
+.bubble {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem;
+  border-radius: 999px;
+  font-size: 1.05rem;
+  background-color: var(--bubble-gray);
+  color: var(--text-dark);
+  width: 20rem;
+}
+
+.right .bubble {
+  background-color: var(--bubble-green);
+}
+
+.note .bubble {
+  background-color: rgb(205, 205, 205)
+}
+
+
+.tail {
+  display: flex;
+  position: absolute;
+  background-color: var(--bubble-green);
+  width: 5px;
+  height: 30px;
+  left: 312px;
+  bottom: 20px
+}
+
+
+.close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(103, 101, 101);
+  border-radius: 50%;
+  color: rgb(215, 212, 212);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 300px;
+  bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
