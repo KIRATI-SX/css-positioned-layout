@@ -7,7 +7,7 @@
 body{
     width: 100vw;
     height: 100vh;
-
+    
 }
 .nav-header{
     color: white;
@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    padding: 20px;
+    padding: 30px;
     overflow-y: auto;
     /* position: relative; */
 }
@@ -64,4 +64,21 @@ body{
     border: 0px solid;
     padding: 6px;
     cursor: pointer;
+    color: whitesmoke;
 }
+
+  /* หางด้านขวา */
+  .message-chat.me.active::after {
+    content: "";
+    position: absolute;
+    right: 5px;
+    /* top: 1px; */
+    transform: translateY(60%);
+    width: 0;
+    height: 0;
+    /* border-top: 8px solid transparent; */
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid lightgreen;   
+    /*สีของฟองแชท*/
+  }
+  
