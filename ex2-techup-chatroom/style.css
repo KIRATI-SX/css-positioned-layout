@@ -1,1 +1,67 @@
 /* Start coding here */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+.nav-header{
+    color: white;
+    background-color: rgb(128, 128, 128);
+    /* height: 50px; */
+
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.chatroom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    /* position: relative; */
+}
+
+.message-chat{
+    min-width: 50px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: rgb(128, 128, 128);
+    border-radius: 30px;
+}
+
+.message-chat.friend{
+    align-self: flex-start;
+}
+
+.message-chat.me{
+    background-color: lightgreen;
+    align-self: flex-end;
+}
+
+.message-chat.me.cancel{
+    background-color: rgba(128, 128, 128,0.2);
+    color: rgba(0, 0, 0,0.5);
+    position: relative;
+
+}
+
+.btn-cancel{
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    
+    background-color: rgba(128, 128, 128,0.5);
+    border-radius: 50%;
+    border: 0px solid;
+    padding: 6px;
+    cursor: pointer;
+}
