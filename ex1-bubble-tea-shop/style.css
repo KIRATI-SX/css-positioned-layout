@@ -1,5 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
   font-family: "Kanit";
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Start coding here */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 680px;
+  /* width: 90%; */
+  overflow: hidden;
+  /* border: 5px solid white; */
+  background-color: white;
+  padding: 10px;
+}
+
+.img-content {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.shop-name {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+
+  font-size: 2rem;
+  color: white;
+  padding: 5px;
+}
+
+.locate-shop {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+
+  background-color: rgb(146, 146, 146);
+  font-size: 2rem;
+  color: white;
+  padding: 5px 10px;
+}
